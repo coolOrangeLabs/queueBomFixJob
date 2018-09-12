@@ -110,7 +110,7 @@ namespace queueBomFixJobs
             int sleepcounter = 0;
             while (bomFixJobs.Count() > maxQueuedJobs)
             {
-                Console.WriteLine(String.Format("{0} pending BomFixJobs - {1} total jobs inthe queue, waiting {3} seconds [{2}]...", bomFixJobs.Count(), jobs.Count(), sleepcounter++, Properties.Settings.Default.IdleTimeInSeconds));
+                Console.WriteLine(String.Format("{0} pending BomFix jobs - {1} total jobs in the queue, waiting {3} seconds [{2}]...", bomFixJobs.Count(), jobs.Count(), sleepcounter++, Properties.Settings.Default.IdleTimeInSeconds));
                 Thread.Sleep(Properties.Settings.Default.IdleTimeInSeconds*1000);
                 jobs = _webSvc.JobService.GetJobsByDate(100000, DateTime.MinValue);
                 if (jobs == null) return;
