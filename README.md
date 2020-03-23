@@ -13,7 +13,6 @@ In order to queue the jobs in a 'smart' way, we created the queueBomFixJob tool,
 The tool can be closed and restarted at any time, as it stored his "to do" list in a local little database. The first time you start the tool, it collects the data from Vault and stores them into his database. The next time you start the tool, it will start from where he left off. If you like to have a clean rerun, then just delete the file 'queueDB.sdf', located in the same folder as the executable. Doing so, you remove the 'memory' of the tool, and he will start from scratch with investigating and queueing.
 
 ## Author
-coolOrange s.r.l.  
-Project Development Team
+coolOrange s.r.l.
 
 ![coolOrange](https://user-images.githubusercontent.com/36075173/46519882-4b518880-c87a-11e8-8dab-dffe826a9630.png)
